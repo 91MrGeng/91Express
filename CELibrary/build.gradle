@@ -1,0 +1,104 @@
+apply plugin: 'com.android.library'
+
+android {
+    compileSdkVersion parent.ext.androidCompileSdk
+    buildToolsVersion '23.0.2'
+
+    defaultConfig {
+        minSdkVersion parent.ext.androidMinSdk
+        targetSdkVersion parent.ext.androidTargetSdk
+        versionCode 1
+        versionName "1.0"
+
+        ndk {
+            //设置支持的SO库架构
+            abiFilters 'armeabi' //, 'x86', 'armeabi-v7a', 'x86_64', 'arm64-v8a'
+        }
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+
+    sourceSets {
+        main {
+            jni.srcDirs = []
+            jniLibs.srcDirs = ['libs']
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    def test = parent.ext.test
+    testCompile test.junit
+    def libs = parent.ext.libs
+    //Support
+    compile libs.appcompat
+    compile libs.recyclerView
+    compile libs.cardView
+    compile libs.supportDesign
+    //Inject
+    compile libs.butterKnife
+    compile libs.dagger
+    //Image
+    compile libs.glide
+    compile libs.roundedImageView
+    //Retrofit
+    compile libs.retrofit
+    compile libs.retrofitWithRxJava
+    compile libs.retrofitWithGson
+    //okHttp
+    compile libs.okHttp
+    compile libs.okHttpLogInterceptor
+    //Rx
+    compile libs.rxJava
+    compile libs.rxAndroid
+    compile libs.rxLifecycle
+    compile libs.rxComponent
+    //ORM
+    compile libs.greenDao
+    //Layout
+    //    compile libs.percentSupport
+    compile libs.percent
+    compile libs.orlogger
+    //Varify
+    compile libs.saripaar
+    //PhotoView
+    compile libs.photoView
+    //nucles
+    compile libs.nucleus
+    compile libs.nucleusSupportV4
+    compile libs.nucleusSupportV7
+    //icepick
+    compile libs.icepick
+    //leakcanary
+    compile libs.leakcanaryDebug
+    //otto
+    //    compile libs.otto
+    //flycotablayout
+    compile libs.flycotablayout
+    compile libs.flycoroundview
+    compile libs.nineoldandroid
+    compile libs.expandablelayout
+    compile libs.gbslidebar
+    compile libs.gifdrawable
+    compile libs.prefser
+    compile libs.stetho
+    compile libs.switchbutton
+    compile libs.datePicker
+    compile libs.okhttpUtils
+    compile libs.bugly
+    //    compile libs.XhsEmoticonsKeyboard
+    //    compile 'com.qiniu:qiniu-android-sdk:7.1.+'
+
+//    compile libs.XhsEmoticonsKeyboard
+
+//    compile 'com.qiniu:qiniu-android-sdk:7.1.+'
+
+
+    compile files('libs/AMap_Location_V2.2.0_20151222.jar')
+    compile files('libs/Rong_IMLib_v2_4_8.jar')
+    compile project(':SweetAlertDialog')
+}

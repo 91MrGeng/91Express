@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="theme_primary">@color/color_main</color>
+    <color name="theme_primary_dark">@color/color_000</color>
+    <color name="theme_control_normal">@color/color_a19e96</color>
+    <color name="theme_control_activated">@color/theme_primary</color>
+    <color name="theme_control_highlight">@color/theme_primary</color>
+
+    <!-- 规范-->
+    <color name="page_background">#f3f3f3</color>
+    <color name="btn_blue_normal">#2bbbfd</color>
+
+    <!-- 所有用色 被调用 -->
+    <color name="color_000">#000</color>
+    <color name="color_000_10">#1A000000</color>
+    <color name="color_000_60">#99000000</color>
+    <color name="color_333">#333</color>
+    <color name="color_444">#444</color>
+    <color name="color_666">#666</color>
+    <color name="color_999">#999</color>
+    <color name="color_aaa">#aaa</color>
+
+    <color name="color_ccc">#CCC</color>
+    <color name="color_dcdcdc">#DCDCDC</color>
+    <color name="color_eee">#EEE</color>
+    <color name="color_e5e5e5">#E5E5E5</color>
+    <color name="color_fff">#FFF</color>
+    <color name="color_fff_30">#4DFFFFFF</color>
+    <color name="color_fff_60">#99FFFFFF</color>
+    <color name="color_fff_90">#E6FFFFFF</color>
+    <color name="color_f3f3f3">#F3F3F3</color>
+    <color name="color_f2f2f2">#F2F2F2</color>
+    <color name="color_main">#113782</color>
+
+    <color name="color_2bbbfd">#2BBBFD</color>
+    <color name="color_2bbbfd_80">#CC2BBBFD</color>
+    <color name="color_2bbbfd_90">#E62BBBFD</color>
+    <color name="color_f6ba53">#F6BA53</color>
+    <color name="color_f6ba53_80">#CCF6BA53</color>
+    <color name="color_95dd6b">#95DD6B</color>
+    <color name="color_ffcfd7">#FFCFD7</color>
+
+    <color name="color_95e4ff">#95E4FF</color>
+    <color name="color_f84a4b">#F84A4B</color>
+
+    <color name="color_a19e96">#A19E96</color>
+    <color name="color_71a9ca">#71A9CA</color>
+    <color name="color_152636">#152636</color>
+
+    <color name="color_ff9600">#FF9600</color>
+
+    <!-- 背景用色 -->
+    <color name="bg_fff">@color/color_fff</color>
+    <color name="bg_fff_90">@color/color_fff_90</color>
+    <color name="bg_f3f3f3">@color/color_f3f3f3</color>
+    <color name="bg_000_60">@color/color_000_60</color>
+    <color name="bg_2bbbfd_90">@color/color_2bbbfd_90</color>
+    <color name="bg_f6ba53">@color/color_f6ba53</color>
+    <color name="bg_95dd6b">@color/color_95dd6b</color>
+    <color name="bg_ffcfd7">@color/color_ffcfd7</color>
+    <color name="bg_95e4ff">@color/color_95e4ff</color>
+    <color name="bg_f84a4b">@color/color_f84a4b</color>
+    <!--按钮用色 -->
+    <color name="btn_home_applying_normal">#f09500</color>
+    <color name="btn_home_applying_pressed">#aaf09500</color>
+
+    <!-- 分割线用色 -->
+    <color name="divider_list">@color/color_e5e5e5</color>
+    <color name="divider_toolbar">@color/color_ccc</color>
+    <color name="divier_common">@color/color_f2f2f2</color>
+    <color name="divier_vertical_30P">@color/color_fff_30</color>
+
+    <!-- 文字用色 -->
+    <color name="text_fff">@color/color_fff</color>
+    <color name="text_ccc">@color/color_ccc</color>
+    <color name="text_999">@color/color_999</color>
+    <color name="text_aaa">@color/color_aaa</color>
+    <color name="text_666">@color/color_666</color>
+    <color name="text_444">@color/color_444</color>
+    <color name="text_2bbbfd">@color/color_2bbbfd</color>
+    <color name="text_71a9ca">@color/color_71a9ca</color>
+    <color name="text_home_message">@color/color_152636</color>
+
+    <!-- 点击效果用色 -->
+    <color name="click_blue">@color/color_2bbbfd</color>
+    <color name="click_blue_pressed">@color/color_2bbbfd_80</color>
+    <color name="click_orange">@color/color_f6ba53</color>
+    <color name="click_orange_pressed">@color/color_f6ba53_80</color>
+    <color name="click_button">@color/color_f3f3f3</color>
+    <color name="click_button_pressed">@color/color_eee</color>
+    <color name="click_list">@color/color_fff</color>
+    <color name="click_list_pressed">@color/color_000_10</color>
+
+    <!-- 筛选选项效果用色 -->
+    <color name="filter_normal">@color/color_fff</color>
+    <color name="filter_selected">@color/color_2bbbfd_80</color>
+
+
+</resources>
