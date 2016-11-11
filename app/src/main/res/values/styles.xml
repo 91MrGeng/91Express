@@ -1,11 +1,51 @@
 <resources>
 
+    <style name="AppBaseTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="AppBaseTheme">
         <!-- Customize your theme here. -->
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <!--为控件的选中颜色，即checked或selected状态的颜色。-->
         <item name="colorAccent">@color/colorAccent</item>
+        <!--实际上为Actionbar中的文本颜色-->
+        <item name="android:textColorPrimary">@color/textColorPrimary</item>
+        <item name="android:windowNoTitle">true</item>
+        <item name="windowActionBar">false</item>
+    </style>
+
+
+    <declare-styleable name="BadgeButton">
+        <!-- 徽标文本，为空时显示一个小红点 -->
+        <attr name="btnBadgeText" format="string"/>
+        <!-- 徽标高度，宽度自适应 -->
+        <attr name="btnBadgeHeight" format="dimension"/>
+        <!-- 徽标背景色，文本白色 -->
+        <attr name="btnBadgeColor" format="color"/>
+        <!-- 徽标是否可见 -->
+        <attr name="btnBadgeVisible" format="boolean"/>
+    </declare-styleable>
+    <style name="BadgeButton">
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_weight">1</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_gravity">center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:textColor">#cc333333</item>
+        <item name="btnBadgeHeight">14dp</item>
+        <item name="btnBadgeColor">@color/colorAccent</item>
+    </style>
+    <style name="BadgeButton.Normal">
+        <item name="android:clickable">true</item>
+        <item name="android:background">@drawable/badge</item>
+        <item name="btnBadgeVisible">true</item>
     </style>
 
 </resources>
