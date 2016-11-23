@@ -33,7 +33,7 @@ public class HomeFragment extends BaseFragment<HomePresenter> implements HomeVie
 
     @Override
     protected int getLayoutId() {
-        return R.layout.activity_main;
+        return R.layout.main_container;
     }
 
     @Override

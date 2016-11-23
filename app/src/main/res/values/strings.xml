@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">91速运</string>
+    <string name="oderTxt">行程</string>
+    <string name="indexTxt">首页</string>
 </resources>

@@ -1,10 +1,38 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <include android:id="@+id/toolbar_layout"
         android:layout_width="match_parent"
-        android:layout_height="match_parent" >
-    <FrameLayout
-        android:id="@+id/fl_container"
+        android:layout_height="wrap_content"
+        layout="@layout/toolbar"/>
+    <com.e91.express.ui.view.CustomViewPager
+        android:layout_below="@+id/toolbar_layout"
+        android:id="@+id/main_viewpager"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        />
-    </RelativeLayout>
+        android:layout_height="match_parent" />
+    <!--<FrameLayout
+            android:id="@+id/fl_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            </FrameLayout>-->
+    <!--<FrameLayout
+        android:layout_alignParentBottom="true"
+        android:id="@+id/bottom_container"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>-->
+    <include layout="@layout/bottom_nav"
+        android:layout_width="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_height="50dp"/>
+    <ImageView
+        android:id="@+id/nav_call"
+        android:clickable="true"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginBottom="5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/selector_call"/>
+</RelativeLayout>
