@@ -28,4 +28,12 @@
 
 
     <color name="background_material_light_1">#fafafa</color>
+
+    <!--卡片扁平化颜色-->
+    <color name="card1">#ffFF9800</color>
+    <color name="card2">#ff3F51B5</color>
+    <color name="card3">#ff673AB7</color>
+    <color name="card4">#ff006064</color>
+    <color name="card5">#ffFFEB3B</color>
+    <color name="card6">#ff9E9E9E</color>
 </resources>

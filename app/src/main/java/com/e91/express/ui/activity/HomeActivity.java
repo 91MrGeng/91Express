@@ -147,6 +147,7 @@ public class HomeActivity extends BaseActivity {
                 Toast.makeText(HomeActivity.this,"点击呼叫",Toast.LENGTH_SHORT).show();
             }
         });
+        user_bar.setVisibility(View.VISIBLE);
         user_bar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
